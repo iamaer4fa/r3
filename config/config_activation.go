@@ -18,7 +18,15 @@ import (
 // license revocations
 var revocations = []string{"LI00334231"}
 
-// public key of OC2020_license_key, created 2020-10-05
+// License activation
+// public key of custom key, used to verify license signature, created: 2025-02-19
+// private key is stored in a secure location
+// This is experimental, do not use in production
+// Please use the upstream public key if use in production
+// Download R3 at https://rei3.de/en/download
+// You should contact https://rei3.de/en/contact for professional support
+// If you have questions about this fork, please contact me: allan.registos@gmail.com
+
 var publicKey = `-----BEGIN RSA PUBLIC KEY-----
 MIICCgKCAgEAr6OcDoMUeg9HC/YgCl4lp9dp95YxWpRbcyVvCD/xHX3ThP0AbtFV
 UNo3M/XOpn8xHUVHQSdzFArxOc3Flk+szirsDKeS3j6PDRWTWVfJtWaP5xX5iWs1
