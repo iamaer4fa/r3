@@ -30,15 +30,12 @@ func GetDbBinPath() string {
 
 // SetPaths sets the paths for the embedded database
 func SetPaths() {
+	dbBin = config.File.Paths.EmbeddedDbBin
 	dbData = config.File.Paths.EmbeddedDbData
 
 	if runtime.GOOS == "windows" {
-		dbBin = filepath.Join("pgsql", "bin", "postgres.exe")
-		dbBinCtl = filepath.Join("pgsql", "bin", "pg_ctl.exe")
-		locale = "English"
+		dbBinCtl = filepath.Join(dbBin, "pg_ctl.exe")
 	} else {
-		dbBin = "postgres"
-		dbBinCtl = "pg_ctl"
-		locale = "C"
+		dbBinCtl = filepath.Join(dbBin, "pg_ctl")
 	}
 }
