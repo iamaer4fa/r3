@@ -19,13 +19,12 @@ import (
 var revocations = []string{"LI00334231"}
 
 // License activation
-// public key of custom key, used to verify license signature, created: 2025-02-19
-// private key is stored in a secure location
+// public key of custom key, created: 2025-02-19
 // This is experimental, do not use in production
 // Please use the upstream public key if use in production
 // Download R3 at https://rei3.de/en/download
 // You should contact https://rei3.de/en/contact for professional support
-// If you have questions about this fork, please contact me: allan.registos@gmail.com
+// If you have questions about this fork, please email : allan.registos@gmail.com
 
 var publicKey = `-----BEGIN RSA PUBLIC KEY-----
 MIICCgKCAgEAr6OcDoMUeg9HC/YgCl4lp9dp95YxWpRbcyVvCD/xHX3ThP0AbtFV
